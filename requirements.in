@@ -1,0 +1,17 @@
+fastapi
+supabase
+pydantic-ai
+tokonomics
+logfire
+pdfminer.six
+python-docx
+APScheduler
+phonenumbers
+SQLAlchemy
+psycopg2
+
+# Testing & dev tools
+pytest-asyncio
+ruff
+black
+isort

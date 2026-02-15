@@ -1,0 +1,27 @@
+[project]
+name = "recruiter-agent"
+version = "0.1.0"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+addopts = "--strict-markers"
+markers = [
+    "asyncio: mark test to be run with asyncio"
+]
+
+[tool.isort]
+profile = "black"
+line_length = 88
+multi_line_output = 3
+include_trailing_comma = true
+
+[tool.black]
+line-length = 88
+target-version = ['py311']
